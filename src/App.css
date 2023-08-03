@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  width: 33%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #000;
+  color: #fff;
+}
