@@ -10,18 +10,25 @@ body {
   padding: 0;
 }
 
+body {
+  font-size: 1.4rem;
+}
+
 .btns {
   display: flex;
 }
 
-.btn {
+.btns button {
   width: 33%;
   padding: 1rem;
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+.btns button.selected {
   background-color: #000;
   color: #fff;
+}
+
+ul li {
+  margin-bottom: 1rem;
 }

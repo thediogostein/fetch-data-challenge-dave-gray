@@ -1,12 +1,12 @@
 import React from 'react';
+import ListItem from './ListItem';
 
-function List() {
-  return (
-    <ul>
-      <li>Item</li>
-      <li>Item</li>
-    </ul>
-  );
+function List({ data }) {
+  const listElements = data.map((item) => (
+    <ListItem key={item.id} item={item} />
+  ));
+
+  return <ul>{listElements}</ul>;
 }
 
 export default List;
