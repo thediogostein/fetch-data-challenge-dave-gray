@@ -10,10 +10,6 @@ body {
   padding: 0;
 }
 
-body {
-  font-size: 1.4rem;
-}
-
 .btns {
   display: flex;
 }

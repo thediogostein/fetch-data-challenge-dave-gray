@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Form from './Form';
-import List from './List';
+import Table from './Table';
 
 import './App.css';
 
@@ -33,7 +33,7 @@ function App() {
       <Form endPoint={endPoint} setEndPoint={setEndPoint} />
       {isLoading && <p>Loading data...</p>}
       {fetchError && <p>{fetchError}</p>}
-      {!fetchError && !isLoading && <List data={data} />}
+      {!fetchError && !isLoading && <Table data={data} />}
     </>
   );
 }
